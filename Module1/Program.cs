@@ -13,6 +13,12 @@ class Program
         Console.WriteLine ("What is the hight of the triangle");
         var hight = Console.ReadLine();
         Console.WriteLine("The area is " + TArea (Convert.ToDouble(baseLength),Convert.ToDouble(hight)));
+        
+        Console.WriteLine ("What is the length of the rectangle");
+        var length = Console.ReadLine();
+        Console.WriteLine ("What is the width of the rectangle");
+        var width = Console.ReadLine();
+        Console.WriteLine("The area is " + RArea (Convert.ToDouble(length),Convert.ToDouble(width)));
     }
     static double CArea(double radius)
     {
@@ -23,6 +29,10 @@ class Program
     {
         return baseLength * hight / 2;
         
+    }
+    static double RArea(double length, double width)
+    {
+        return length * width;
     }
   
 }

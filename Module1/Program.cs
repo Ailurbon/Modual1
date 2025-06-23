@@ -19,6 +19,10 @@ class Program
         Console.WriteLine ("What is the width of the rectangle");
         var width = Console.ReadLine();
         Console.WriteLine("The area is " + RArea (Convert.ToDouble(length),Convert.ToDouble(width)));
+        
+        Console.WriteLine ("How long are the sides");
+        var side = Console.ReadLine(); 
+        Console.WriteLine( "The area is "+ SArea (Convert.ToDouble (side)));
     }
     static double CArea(double radius)
     {
@@ -33,6 +37,11 @@ class Program
     static double RArea(double length, double width)
     {
         return length * width;
+    }
+    
+    static double SArea(double side)
+    {
+        return side * side;
     }
   
 }
